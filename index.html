@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PUBG_Css</title>
+</head>
+<body>
+    <section>
+        <audio id="audio" src="imgs/sound.wav" autostart="false"></audio>
+    </section>
+
+    <script>
+        document.addEventListener("click", function (event){
+            var body = document.querySelector('body');
+            var bullet = document.createElement('span');
+            var x = event.offsetX;
+            var y = event.offsetY;
+            bullet.style.left = x +'px';
+            bullet.style.top = y +'px';
+            console.log(x +'______'+    y);
+            body.appendChild(bullet);
+            var ad=document.getElementById('audio');
+            audio.play();
+        })
+    </script>
+</body>
+</html>
